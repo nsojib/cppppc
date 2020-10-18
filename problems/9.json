@@ -1,0 +1,9 @@
+{
+    "id": 9,
+    "name": "Pass by Value and Pass by Reference",
+    "cat": "Pointer",
+    "info": "Write two functions to demonstrate pass by value and pass by reference. <br>\r\n<br>\r\nint a=5, b=4, c, d;  <br>\r\nc=sum_val(a, b)   <br>\r\nsum_ref(a, b, &d);  <br>\r\n<br>\r\nprintf(\"%d %d\\n\",c, d);    //output should be 9 &nbsp; 9 <br>\r\n<br>\r\nYour Task: Implement the two functions <br> sum_val and sum_ref\r\n",
+    "input": "try with different values.",
+    "output": "",
+    "setter": "root"
+}

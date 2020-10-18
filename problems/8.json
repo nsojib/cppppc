@@ -1,0 +1,9 @@
+{
+    "id": 8,
+    "name": "Dot Product",
+    "cat": "Array",
+    "info": "Example <br>\r\n| 1 2 |       &nbsp; &nbsp;&nbsp;&nbsp;   | 10   |  <br>\r\n| 3 4 |   dot   |  20  |  <br>\r\n| 5 6 |  <br>\r\n\r\nTask <br>\r\nTake input of the first matrix shape and then the 2nd matrix shape. <br>\r\nIf the shapes are okay for dot product, do the dot product and print the result. <br>\r\nIf the shapes doesn't match print \"Can't multiply\"\r\n",
+    "input": "| 1 2 |       &nbsp; &nbsp;&nbsp;&nbsp;   | 10   |  <br>\r\n| 3 4 |   dot   |  20  |  <br>\r\n| 5 6 |  <br>",
+    "output": "",
+    "setter": "root"
+}

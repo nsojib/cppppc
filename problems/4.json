@@ -1,9 +1,9 @@
 {
     "id": 4,
-    "name": "Odd Even",
+    "name": "Encrypt",
     "cat": "Basic",
-    "info": "Write a program to take an integer as input\r\nAnd print 'Odd' or 'Even'",
-    "input": "11\r\n",
-    "output": "Odd",
+    "info": "Take an input sequence. encrypt it by shifting two positions in the alphabet order. For example, a will be replaced by c, p will be replaced by r, y will be replaced by a, z will be replaced by b.\r\n",
+    "input": "hello world\r\n",
+    "output": "jgnnq yqtnf",
     "setter": "root"
 }

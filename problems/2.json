@@ -1,9 +1,9 @@
 {
     "id": 2,
-    "name": "good night",
-    "cat": "Function",
-    "info": "Write a function.\r\nPrint good.",
-    "input": "good night",
-    "output": "sojib ratri",
+    "name": "Prime Numbers",
+    "cat": "Others",
+    "info": "Print all the prime numbers less or equal N. <br>\r\nFor each input, print output as a single line.",
+    "input": "10 <br>\r\n21",
+    "output": "2,3,5,7  <br>\r\n2,3,5,7,11,13,17,19",
     "setter": "root"
 }

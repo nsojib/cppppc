@@ -1,0 +1,9 @@
+{
+    "id": 10,
+    "name": "Cosine Similarity",
+    "cat": "Others",
+    "info": "Consider the following vectors<br>\r\n<br>\r\na=[4,5,6] <br>\r\nb=[4, 1, 0] <br>\r\n\r\nYour task: calculate the angle between a and b<br>",
+    "input": "",
+    "output": "",
+    "setter": "root"
+}

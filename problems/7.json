@@ -1,0 +1,9 @@
+{
+    "id": 7,
+    "name": "Big Integer",
+    "cat": "Others",
+    "info": "int data type (2 bytes) range is -32,768 to 32,767  <br>\r\nlong and double data types can hold large numbers (8 bytes) <br>\r\n<br>\r\nBut, what about numbers larger than double data types range? How computers multiply or sum those numbers? <br>\r\n<br>\r\nThe idea is to store the number in string and then multiply them using a similar approach as we learned to do with a pen and paper. <br>\r\n<br>\r\nTask: Take two numbers as a string and multiply them. <br>\r\nExample: <br>\r\n&nbsp;&nbsp; 101 <br>\r\n&nbsp;&nbsp;x 15  <br>\r\n------- <br>\r\n&nbsp;&nbsp;505 <br>\r\n101x <br>\r\n------------<br>\r\n1515\r\n\r\n\r\n\r\n",
+    "input": "12345 <br>\r\n12",
+    "output": "148140",
+    "setter": "root"
+}

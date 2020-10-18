@@ -1,0 +1,9 @@
+{
+    "id": 6,
+    "name": "Pizza Cutting",
+    "cat": "Others",
+    "info": "Lets cut a pizza and observe how many <b>maximum slices</b> are possible<br>\r\n1 cut =2 slice <br>\r\n2 cut= 4 slice <br>\r\n3 cut = 7 slice <br>\r\n<br>\r\nNow, write a program to calculate number of slices for <b>N</b> cuts.<br>\r\n<b>Task: Find two solutions</b><br>\r\n1. Analytical Solution: Find an equation and code it <br>\r\n2. Recursive Solution: Discover the recursive relation and solve using a recursive function.",
+    "input": "4 <br>\r\n10",
+    "output": "11 <br>\r\n56",
+    "setter": "root"
+}

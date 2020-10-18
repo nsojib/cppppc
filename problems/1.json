@@ -1,9 +1,9 @@
 {
     "id": 1,
-    "name": "good night",
-    "cat": "Function",
-    "info": "Write a function.\r\nPrint good.",
-    "input": "good night",
-    "output": "sojib ratri",
+    "name": "Palindrome",
+    "cat": "Others",
+    "info": "A palindrome is a word, number, phrase, or other sequences of characters which reads the same backward as forward, such as madam, racecar <br>\r\n </br>\r\nYour Task: </br>\r\nTake an input sequence, print YES or NO",
+    "input": "palindrome <br>\r\ncppppc",
+    "output": "NO <br>\r\nYES",
     "setter": "root"
 }
