@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-import numpy as np 
 import os
 from flask import Response
 import json
