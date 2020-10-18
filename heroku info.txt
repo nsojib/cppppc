@@ -1,0 +1,5 @@
+heroku login
+heroku run bash -a APPNAME
+$ cd app
+
+$ exit

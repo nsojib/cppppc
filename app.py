@@ -36,6 +36,10 @@ def setaproblem():
       pinfo=data['pinfo']
       pinput=data['pinput']
       poutput=data['poutput']
+      pd=int(data['pid']) 
+      if os.path.isfile('problems/'+str(pd)+'.json'):
+         pid=pd  #existing file.
+
       success=save_a_problem(pid, pname, pcat, pinfo, pinput, poutput)
 
    return render_template('info.html', title='success', info=success )
@@ -49,8 +53,8 @@ def save_a_problem(pid, pname, pcat, pinfo, pinput, poutput, setter='root'):
    problem['input']=pinput
    problem['output']=poutput
    problem['setter']=setter
-   fname='problems/'+str(time.time())+'.json'
-   fname='problems/'+pcat+'_'+str(pid)+'.json'
+   # fname='problems/'+str(time.time())+'.json'
+   # fname='problems/'+pcat+'_'+str(pid)+'.json'
    fname='problems/'+str(pid)+'.json'
    with open(fname, "w") as write_file:
       json.dump(problem, write_file, indent=4)
@@ -95,7 +99,7 @@ def problemsadmin():
    html_e = "</div>"
    for label,data in datas.items():
       s+=label+'_'+str(data)+'<br>'
-      html_b += get_p_body(label, data, isexpand=False);
+      html_b += get_p_body(label, data, isexpand=False, editor=True);
    
    s=html_s+html_b+html_e 
    return render_template('info.html', title='success', info=s )
@@ -125,7 +129,7 @@ def problems():
    s=html_s+html_b+html_e 
    return render_template('info.html', title='Problem List', info=s )
 
-def get_p_body(label, plist, isexpand=False):
+def get_p_body(label, plist, isexpand=False, editor=False):
    special = "";
    if isexpand:
       special = " in"
@@ -148,7 +152,10 @@ def get_p_body(label, plist, isexpand=False):
    for data in plist:
       id=str( data['id'] )
       name=data['name']
-      lb_b += "<a href='/page/" +id + "' class='list-group-item'> <h4>#" + id + ": " + name + "</h4></a>"
+      if editor:
+         lb_b += "<a href='/edit/" +id + "' class='list-group-item'> <h4>#" + id + ": " + name + "</h4></a>"
+      else:
+         lb_b += "<a href='/page/" +id + "' class='list-group-item'> <h4>#" + id + ": " + name + "</h4></a>"
 
 
    return lb_s + lb_b + lb_e
@@ -201,10 +208,28 @@ def page(pid):
    return render_template('page_template.html', pid=pid, uname=uname, title=title, info=info, input=input, output=output)
 
 
+@app.route('/edit/<pid>')
+def edit(pid): 
+   fname='problems/'+str(pid)+'.json'
+   if not os.path.isfile(fname):
+      return render_template('info.html', title='failed', info='problem id '+str(pid)+' not found!')
+
+   with open(fname) as f:
+         problem= json.load(f)
+
+   pid=problem['id']
+   uname='sojib'
+   title=problem['name']
+   cat=problem['cat']
+   info=problem['info']
+   input=problem['input']
+   output=problem['output']
+   # print('title=',title)
+   return render_template('editproblem.html', id=pid, uname=uname, cat=cat, title=title, info=info, input=input, output=output)
 
 
 
 if __name__ == '__main__': 
-	# app.run(debug=True)
-   app.run(host='0.0.0.0')
+	app.run(debug=True)
+   # app.run(host='0.0.0.0')
 	

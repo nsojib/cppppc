@@ -65,17 +65,17 @@
                         <div class=""row">
 <div class="well well-sm">
                         <br>
-                        <h4>{{info}}</h4>
+                        <h4>{{info | safe}}</h4>
 
                     </div><div class="panel panel-default">
                     <div class="panel-heading"><h4>Sample Input</h4></div>
                     <div class="panel-body" style="max-height: 10;">
-                        {{input}}                
+                        {{input | safe}}                
                     </div>
                 </div><div class="panel panel-default">
                     <div class="panel-heading"><h4>Sample Output</h4></div>
                     <div class="panel-body" style="max-height: 10;">
-                       {{output}}
+                       {{output | safe}}
                     </div>
                 </div><div class="panel panel-info">
                         <div class="panel-heading">Notes</div>

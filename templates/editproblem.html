@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learning C | Problem Edit</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--bootstrap libs-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+ 
+        <style>
+            #container {
+                float: left;
+                margin: 0px auto;
+                width: 320px;
+                height: 240px;
+                border: 10px #333 solid;
+            }
+            #container2 {
+                float: left;
+                margin: 0px auto;
+                width: 320px;
+                height: 240px;
+                border: 10px #333 solid;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- First row -->
+            <div class="row">
+
+                <div class="col-sm-2" > </div>
+                <div class="col-sm-5" >
+                    <a href="/" class="list-group-item">
+                        <h4>Learning C | Main</h4>
+                        
+                    </a>
+                    
+                </div>
+                <div class="col-sm-3" >
+                        <h4>User:sojib</h4>
+                        
+                    
+                    
+                </div>
+            </div>            <!-- First row -->
+            <div class="row">
+
+                <div class="col-sm-2" > </div>
+                <div class="col-sm-8" >
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+
+                            <h2>Problem Editor</h2>
+
+                        </div>
+
+
+                        <!-- Problem-->
+                        <div class=""row">
+<div class="panel panel-info">
+                        <div class="panel-body" style="max-height: 10;">
+                            <form role="form" action="/setaproblem" method=post>
+<input   value = {{id}} name="pid"  readonly> <div class="row">
+                                        <div class="form-group col-xs-10">
+                                            <div class="form-group">
+                                                <label for="pname">Problem Name:</label>
+                                                <!-- <input type = "text"  class="form-control"  value = {{title}} name="pname"
+                                                       title="Enter Problem Name"/> -->
+
+                                                       <textarea class="form-control" rows="1"  name="pname"
+                                                       />{{title}}</textarea>
+
+
+                                            </div>
+                                        </div>
+                                    </div> <div class="row">
+                                        <div class="form-group col-xs-10">
+                                            <div class="form-group">
+                                                <label for="pcat">Select Category</label>
+                                                 <select name="pcat" id="pcat" class="form-control">
+                                                                            <option>{{cat}}</option>
+                                                                            <option>Basic</option><option>If-Else</option><option>Loop</option><option>Array</option><option>Function</option><option>Pointer</option><option>Others</option>
+                                                                            <option>exam</option>
+          </select>                                            </div>
+                                        </div>
+                                    </div> <div class="row">
+                                        <div class="form-group col-xs-10">
+                                            <div class="form-group">
+                                                <label for="pinfo">Description:</label>
+                                                <textarea class="form-control" rows="10"  name="pinfo"
+                                                        />{{info}}</textarea>
+                                            </div>
+                                        </div>
+                                    </div> <div class="row">
+                                        <div class="form-group col-xs-10">
+                                            <div class="form-group">
+                                                <label for="pinput">Input:</label>
+                                                <textarea class="form-control" rows="4"  name="pinput"
+                                                        />{{input}}</textarea>
+                                            </div>
+                                        </div>
+                                    </div> <div class="row">
+                                        <div class="form-group col-xs-10">
+                                            <div class="form-group">
+                                                <label for="poutput">Output:</label>
+                                                <textarea class="form-control" rows="4"  name="poutput"
+                                                        />{{output}}</textarea>
+                                            </div>
+                                        </div>
+                                    </div><button type="submit" class="btn btn-success">Overwrite</button>
+                             </form>
+                        </div>
+                    </div><div class="panel-footer">
+                        C with love.
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1" > </div>
+        </div>
+
+
+    </body>
+</html>
