@@ -1,0 +1,9 @@
+{
+    "id": 3,
+    "name": "Factorial!",
+    "cat": "Basic",
+    "info": "Write a program to scan an integer n. Now calculate factorial and print the result!",
+    "input": "5",
+    "output": "120",
+    "setter": "root"
+}

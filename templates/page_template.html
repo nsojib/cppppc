@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learning C | PID={{pid}}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--bootstrap libs-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+ 
+        <style>
+            #container {
+                float: left;
+                margin: 0px auto;
+                width: 320px;
+                height: 240px;
+                border: 10px #333 solid;
+            }
+            #container2 {
+                float: left;
+                margin: 0px auto;
+                width: 320px;
+                height: 240px;
+                border: 10px #333 solid;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- First row -->
+            <div class="row">
+
+                <div class="col-sm-2" > </div>
+                <div class="col-sm-5" >
+                    <a href="/" class="list-group-item">
+                        <h4>Learning C | Main</h4>
+                        
+                    </a>
+                    
+                </div>
+                <div class="col-sm-3" >
+                        <h4>User: {{uname}} </h4> 
+                    
+                </div>
+            </div>            <!-- First row -->
+            <div class="row">
+
+                <div class="col-sm-2" > </div>
+                <div class="col-sm-8" >
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+
+                            <h2>#{{pid}}: {{title}}</h2>
+
+                        </div>
+
+
+                        <!-- Problem-->
+                        <div class=""row">
+<div class="well well-sm">
+                        <br>
+                        <h4>{{info}}</h4>
+
+                    </div><div class="panel panel-default">
+                    <div class="panel-heading"><h4>Sample Input</h4></div>
+                    <div class="panel-body" style="max-height: 10;">
+                        {{input}}                
+                    </div>
+                </div><div class="panel panel-default">
+                    <div class="panel-heading"><h4>Sample Output</h4></div>
+                    <div class="panel-body" style="max-height: 10;">
+                       {{output}}
+                    </div>
+                </div><div class="panel panel-info">
+                        <div class="panel-heading">Notes</div>
+                        <div class="panel-body" style="max-height: 10;">
+                            <form role="form" action="/CodeReceiver" method=post> 
+<input type = "hidden"   value = "123" name="reg" >
+                                <input type = "hidden"   value = "_ID_" name="id" >
+                                <input type = "hidden"   value = "_basic_" name="label" >
+                                <textarea class="form-control" rows="5" name="codecode" id="ccode" placeholder = "your note"></textarea><br>
+                                <button type="special" class="btn btn-special2" disabled>Save</button>
+                             </form>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                                C with love.
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1" > </div>
+        </div>
+
+
+    </body>
+</html>

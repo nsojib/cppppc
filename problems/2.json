@@ -1,0 +1,9 @@
+{
+    "id": 2,
+    "name": "good night",
+    "cat": "Function",
+    "info": "Write a function.\r\nPrint good.",
+    "input": "good night",
+    "output": "sojib ratri",
+    "setter": "root"
+}

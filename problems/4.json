@@ -1,0 +1,9 @@
+{
+    "id": 4,
+    "name": "Odd Even",
+    "cat": "Basic",
+    "info": "Write a program to take an integer as input\r\nAnd print 'Odd' or 'Even'",
+    "input": "11\r\n",
+    "output": "Odd",
+    "setter": "root"
+}

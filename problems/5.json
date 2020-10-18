@@ -1,0 +1,9 @@
+{
+    "id": 5,
+    "name": "Reverse World",
+    "cat": "Array",
+    "info": "Take a line as input. Reverse the line and print the result.",
+    "input": "hello world",
+    "output": "dlrow olleh",
+    "setter": "root"
+}
