@@ -1,0 +1,9 @@
+{
+    "id": 12,
+    "name": "Fibonacci speed up",
+    "cat": "DP",
+    "info": "The Fibonacci number denoted as Fn where is each number is the sum of the two preceding ones. <br>\r\nF0=0,   F1=1 <br>\r\nFn=F(n-1)+F(n-2) <br>\r\nWhere, n>=2 <br>\r\n <br>\r\nTask: Take N as input, print first Nth Fibonacci number.  <br>\r\n<b>Use Memoization tecquinue</b> <br>\r\n<br>\r\nTask2: Try N with a big number. Compare the result with the problem no 11. ",
+    "input": "5 <br>\r\n9",
+    "output": "0 1 1 2 3 <br>\r\n0 1 1 2 3 5 8 13 21",
+    "setter": "root"
+}

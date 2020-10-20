@@ -1,0 +1,9 @@
+{
+    "id": 11,
+    "name": "Fibonacci",
+    "cat": "Function",
+    "info": "The Fibonacci number denoted as Fn where is each number is the sum of the two preceding ones.  <br>\r\nF0=0,  &nbsp; F1=1 <br>\r\nFn=F(n-1)+F(n-2) <br>\r\nWhere, n>=2 <br>\r\n<br>\r\n\r\nTask: Take N as input, print first Nth Fibonacci number.\r\n",
+    "input": "5 <br>\r\n9",
+    "output": "0 1 1 2 3 <br>\r\n0 1 1 2 3 5 8 13 21\r\n\r\n",
+    "setter": "root"
+}
