@@ -136,7 +136,7 @@ def get_p_body(label, plist, isexpand=False, editor=False):
    
    
    lb_b = ""
-   lb_name = "Label: " + label
+   lb_name = "Level: " + label
    lb_s = """<div class='panel panel-default'> 
    <div class='panel-heading'> 
    <h4 class='panel-title'> 
@@ -230,6 +230,6 @@ def edit(pid):
 
 
 if __name__ == '__main__': 
-	app.run(debug=True)
-   # app.run(host='0.0.0.0')
+	# app.run(debug=True)
+   app.run(host='0.0.0.0')
 	
