@@ -67,7 +67,7 @@ def result():
       result = request.form
       uname=result['uname']
       pw=result['pass']
-      if uname=='sojib' and pw=='sojib':
+      if uname=='--uname--' and pw=='--pass--':
          return render_template('profile.html', uname=uname)
       return render_template('index.html')
 
@@ -230,6 +230,6 @@ def edit(pid):
 
 
 if __name__ == '__main__': 
-	# app.run(debug=True)
-   app.run(host='0.0.0.0')
+	app.run(debug=True)
+   # app.run(host='0.0.0.0')
 	
